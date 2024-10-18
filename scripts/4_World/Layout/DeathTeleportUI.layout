@@ -1,0 +1,66 @@
+FrameWidgetClass rootFrame {
+    position 0 0
+    size 1 1
+    hexactpos 0
+    vexactpos 0
+    hexactsize 0
+    vexactsize 0
+    {
+        PanelWidgetClass MainPanel {
+            visible 1
+            color 0 0 0 0.8
+            position 0.3 0.3
+            size 0.4 0.4
+            hexactpos 0
+            vexactpos 0
+            hexactsize 0
+            vexactsize 0
+            style DayZDefaultPanel
+            {
+                TextListboxWidgetClass DeathPositionList {
+                    visible 1
+                    position 0.05 0.1
+                    size 0.9 0.7
+                    hexactpos 0
+                    vexactpos 0
+                    hexactsize 0
+                    vexactsize 0
+                    style Default
+                    font "gui/fonts/sdf_MetronBook24"
+                }
+                ButtonWidgetClass TeleportButton {
+                    visible 1
+                    position 0.2 0.85
+                    size 0.3 0.1
+                    hexactpos 0
+                    vexactpos 0
+                    hexactsize 0
+                    vexactsize 0
+                    text "传送"
+                }
+                ButtonWidgetClass CloseButton {
+                    visible 1
+                    position 0.55 0.85
+                    size 0.3 0.1
+                    hexactpos 0
+                    vexactpos 0
+                    hexactsize 0
+                    vexactsize 0
+                    text "关闭"
+                }
+                TextWidgetClass TokensText {
+                    visible 1
+                    position 0.05 0.05
+                    size 0.9 0.05
+                    hexactpos 0
+                    vexactpos 0
+                    hexactsize 0
+                    vexactsize 0
+                    text "复活令牌: 0"
+                    font "gui/fonts/sdf_MetronBook24"
+                    "text halign" center
+                }
+            }
+        }
+    }
+}
